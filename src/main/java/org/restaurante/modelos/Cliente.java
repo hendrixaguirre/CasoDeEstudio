@@ -3,14 +3,17 @@ package org.restaurante.modelos;
 import javax.swing.*;
 
 public class Cliente {
+    //Atributos
     private String nombre;
     private String carnet;
 
+    //Constructor
     public Cliente(String nombre, String carnet) {
         this.nombre = nombre;
         this.carnet = carnet;
     }
 
+    //Método para realizar el pedido, utilizando do - while
     public Pedido realizarPedido() {
         int codigoPedido = Integer.parseInt(JOptionPane.showInputDialog("Ingrese código del pedido: "));
 
